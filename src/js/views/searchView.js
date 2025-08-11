@@ -120,7 +120,10 @@ const searchFirebase = (url, idx) =>
 
 
 const renderRecipe = (recipe, idx) => {
-  
+    // Debug logging
+    console.log('Recipe data:', recipe.recipe);
+    console.log('Image URL:', recipe.recipe.image);
+    
     const markup = `
     <div class="card">
         <img class="recipe_image" src="${

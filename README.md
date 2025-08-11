@@ -51,3 +51,6 @@ document
 
 * Ability to post photos and add comments
 * Ability to add ratings
+
+## GH pages deployment script
+npx gh-pages -d dist 
