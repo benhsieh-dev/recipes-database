@@ -25,6 +25,9 @@ window.RecipeSearch = {
                 
                 console.log('Trying:', proxy || 'direct');
                 const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
                 const data = await response.json();
                 
                 if (data.hits && data.hits.length > 0) {
@@ -32,7 +35,12 @@ window.RecipeSearch = {
                     return data.hits;
                 }
             } catch (error) {
-                console.log('Failed:', proxy || 'direct', error.message);
+                // Suppress expected CORS/network errors for cleaner console
+                if (proxy === 'https://api.allorigins.win/raw?url=') {
+                    console.log('First proxy failed (expected), trying next...');
+                } else {
+                    console.log('Failed:', proxy || 'direct', error.message);
+                }
             }
         }
         
