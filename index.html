@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const recipe = hit.recipe;
                     const card = `
                         <div class="card">
-                            <img class="recipe_image" src="${recipe.image}" alt="${recipe.label}" onerror="this.src='https://via.placeholder.com/300x200?text=Recipe+Image'">
+                            <img class="recipe_image" src="${recipe.image}" alt="${recipe.label}" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2RkZCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg=='"
                             <div class="card_content">
                                 <a class="results_link" href="${recipe.url}" target="_blank">
                                     <h4>${recipe.label}</h4>

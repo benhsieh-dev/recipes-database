@@ -22,7 +22,7 @@ window.FavoritesManager = {
                         <div class="recipe_card">
                             <img class="recipe_card_image" src="${recipe.image || 'https://via.placeholder.com/300x200?text=Recipe+Image'}" 
                                  alt="${recipe.label}" 
-                                 onerror="this.src='https://via.placeholder.com/300x200?text=Recipe+Image'">
+                                 onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2RkZCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg=='"
                             <div class="recipe_card_content">
                                 <h2 class="recipe-label">${recipe.label}</h2>
                                 <p>

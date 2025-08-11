@@ -42,7 +42,7 @@ window.RecipeSearch = {
             {
                 recipe: {
                     label: `${query.charAt(0).toUpperCase() + query.slice(1)} Recipe - Demo`,
-                    image: 'https://images.unsplash.com/photo-1546548970-71785318a17b?w=300&h=200&fit=crop',
+                    image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM0OGVkYSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkRlbW8gUmVjaXBlPC90ZXh0Pjwvc3ZnPg==',
                     url: 'https://github.com/benhsieh-dev/recipes-database',
                     ingredientLines: ['Recipe data temporarily unavailable', 'Please try again later'],
                     calories: 250,
