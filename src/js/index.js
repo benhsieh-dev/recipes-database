@@ -63,7 +63,7 @@ const landingData = () => {
                 <div class="recipe_card">   
                     <img class="recipe_card_image" src="${
                       res.data[k].image
-                    }" alt="${res.data[k].label}">
+                    }.jpg" alt="${res.data[k].label}">
                     <div class="recipe_card_content">
                     <h2 class="recipe-label">${res.data[k].label}</h2>
                     <p>
