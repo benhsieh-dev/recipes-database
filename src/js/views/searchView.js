@@ -42,8 +42,8 @@ const getData = () => {
             <div class="recipes_cards">
                 <div class="recipe_card">  
                     <img class="recipe_card_image" src="${
-                      res.data[k].image
-                    }.jpg" alt="${res.data[k].label}">
+                      res.data[k].image || 'https://via.placeholder.com/300x200?text=Recipe+Image'
+                    }" alt="${res.data[k].label}" onerror="this.src='https://via.placeholder.com/300x200?text=Recipe+Image'">
                     <div class="recipe_card_content">
                     <h2 class="recipe-label">${res.data[k].label}</h2>
                     <p>
@@ -124,8 +124,8 @@ const renderRecipe = (recipe, idx) => {
     const markup = `
     <div class="card">
         <img class="recipe_image" src="${
-          recipe.recipe.image
-        }.jpg" alt="${limitRecipeLabel(recipe.recipe.label)}">
+          recipe.recipe.image || 'https://via.placeholder.com/300x200?text=Recipe+Image'
+        }" alt="${limitRecipeLabel(recipe.recipe.label)}" onerror="this.src='https://via.placeholder.com/300x200?text=Recipe+Image'">
             <div class="card_content">
                <a class="results_link" href="${
                  recipe.recipe.url

@@ -62,8 +62,8 @@ const landingData = () => {
             <div class="recipes_cards">
                 <div class="recipe_card">   
                     <img class="recipe_card_image" src="${
-                      res.data[k].image
-                    }.jpg" alt="${res.data[k].label}">
+                      res.data[k].image || 'https://via.placeholder.com/300x200?text=Recipe+Image'
+                    }" alt="${res.data[k].label}" onerror="this.src='https://via.placeholder.com/300x200?text=Recipe+Image'">
                     <div class="recipe_card_content">
                     <h2 class="recipe-label">${res.data[k].label}</h2>
                     <p>
